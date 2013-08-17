@@ -1,0 +1,11 @@
+{
+	"id": "info.mobo.exportnotes",
+	"version": "1.0.0",
+	"vendor": "Garfonso",
+	"type": "web",
+	"plug-ins": false,
+	"main": "index.html",
+	"title": "Export Notes",
+	"icon": "icon.png",
+	"uiRevision": 2
+}

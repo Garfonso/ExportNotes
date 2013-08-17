@@ -1,0 +1,22 @@
+{
+  "id": "info.mobo.exportnotes.service",
+  "description": "Service to export all notes from the database to a text file in the media partition.",
+  "engine": "node",
+  "activityTimeout": "60",
+  "services": 
+    [ 
+      {
+        "name": "info.mobo.exportnotes.service",
+        "description": "message export sevice",
+        "commands": 
+          [ 
+            {
+              "name": "doExport",
+              "assistant": "doExportAssitant",
+		      "subscribe": true,
+              "public": true
+            }
+		      ]
+	    }
+	  ]
+}

@@ -1,0 +1,19 @@
+diff -rc original/etc/palm/db/permissions/com.palm.note modified/etc/palm/db/permissions/com.palm.note
+*** original/etc/palm/db/permissions/com.palm.note	2012-12-27 22:44:13.000000000 +0100
+--- modified/etc/palm/db/permissions/com.palm.note	2013-08-15 13:44:19.671247920 +0200
+***************
+*** 9,14 ****
+--- 9,21 ----
+       },{
+           "type": "db.kind",
+           "object": "com.palm.note:1",
++          "caller": "info.mobo.*",
++          "operations": {
++              "read": "allow"
++          }
++      },{
++          "type": "db.kind",
++          "object": "com.palm.note:1",
+           "caller": "com.palm.app.notes",
+           "operations": {
+               "create": "allow",
